@@ -58,6 +58,12 @@ section, nav {
     padding-right: 0;
     padding-left: 0; }
 
+.parrafo__quienessomos, .parrafo__certificaciones {
+  text-align: justify;
+  padding-top: 2rem;
+  padding-right: 6rem;
+  padding-left: 6rem; }
+
 .title1, .title3, .title6 {
   background-color: #00091D; }
 
@@ -176,11 +182,11 @@ footer {
   padding: 0rem 0rem 1rem 0rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #CDA448; }
+  background-color: white; }
   .card h4 {
     margin-top: 1rem;
-    background-color: #00091D;
-    color: #CDA448; }
+    background-color: #CDA448;
+    color: #00091D; }
     .card h4 + img {
       margin-left: 0; }
   .card .left {
@@ -201,8 +207,8 @@ footer {
     margin: 0; }
 
 .banner {
-  width: 565px;
-  height: 922px;
+  width: 682px;
+  height: 946px;
   padding: 0rem 0rem 0rem 0.1rem;
   margin: 0; }
 
@@ -254,6 +260,9 @@ section .card-title {
   margin-top: -4rem;
   color: #00091D;
   background-color: #CDA448; }
+
+section .space__card--art {
+  padding: 0; }
 
 input {
   border: 1px dotted #222;
@@ -316,3 +325,13 @@ input:focus, select:focus {
 .button__producto--left:hover {
   background-color: #00091D;
   color: white; }
+
+.article__banner--img {
+  padding-left: 0;
+  padding-right: 0; }
+
+.space__card--art {
+  flex: 0 0 3.3%;
+  max-width: 3.3%;
+  position: relative;
+  width: 100%; }
