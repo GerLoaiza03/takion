@@ -211,18 +211,18 @@ footer{
 
 
 
-.aside__producto {
+.aside__producto, .aside__servicio {
     overflow: hidden;
 }
 
-.aside__producto img {
+.aside__producto img, .aside__servicio img {
     max-width: 100%;
     height: auto;
     transition: all 300ms ease;
    
 }
 
-.aside__producto:hover img {
+.aside__producto:hover img, .aside__servicio:hover img {
     opacity: 0.8;
     transform: scale(1.1);
     filter: saturate(5) brightness(2);
@@ -285,30 +285,30 @@ img.card {
 }
 
 section {
-    .article__producto1{
+    .article__producto1, .article__servicio1{
         
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
     }
-    .article__producto2{
+    .article__producto2, .article__servicio2{
         
         margin-left: 0;
         margin-right: 0;
     }
-    .article__producto3{
+    .article__producto3, .article__servicio3{
         
         margin-left: 0;
         margin-right: 0;
         
     }
-    .article__producto4{
+    .article__producto4, .article__servicio4, .article__servicio5{
         
         margin-left: 0;
         margin-right: 0;
     }
-    .p__producto--left {
+    .p__producto--left, .p__servicio--left {
         text-align: left;
         background-color: #CDA448;
         margin-top: 7rem;
@@ -316,7 +316,7 @@ section {
         font-weight: bold;
         font-style: italic;
     }
-    .p__producto--right {
+    .p__producto--right, .p__servicio--right {
         text-align: right;
         color: #CDA448;
         background-color: #00091D;
