@@ -28,7 +28,7 @@
 	
 <body>
 		
-	<nav class="navbar navbar-expand-xl navbar-dark  d-flex justify-content-between container">
+	<nav class="navbar navbar-expand-xl navbar-dark  d-flex justify-content-between">
 		<img class="navbar-brand logo"  src="../contenido/logob.png" width="160" height="60"><span class="eslogan">Eslogan</span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navColapsable">
 			<span class="navbar-toggler-icon"></span>
@@ -102,76 +102,89 @@
 	</nav>
 
 	<main>
-	<section class="container bg-light">
+
+		<div class="row">
+			<img src="../contenido/bannercontactos.jpg" alt="" class="banner_servicios col-md-12 img-fluid">
+			</div>	
+
+	<section class="container ">
 		
-        <h1>Contactenos</h1>
-        <form action="" method="POST">
-            <h4>Dejanos tus datos para contactarte</h4>
-            <div>
-                <label for="fullName">Nombre y Apellido</label>
-                <input placeholder="Escribe tu Nombre Completo" id="fullName" name="fullname" type="text" required>
-            </div>
-            <div>
-                <label for="telefono">Celular</label>
-                <input id="telefono" type="number" name="telefono" maxlength="10" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required>
-            </div>
-            <div>
-                <label for="city">Ciudad</label>
-                <input name="city" id="city" type="text" required>
-            </div>
-            <div>
-                <label for="empresa">Empresa</label>
-                <input name="empresa" id="empresa" type="text" placeholder="Nombre Empresa" required>
-            </div>
+		<h2 class="title2">Contactenos</h2>
+	 	
+		
+		<div class="container col-md-9 formulario_contenedor">
+			<h4>Dejanos tus datos para contactarte</h4>
+			<form action="" method="POST"> 
+			
+				<div class="form-group">
+					<label for="fullName">Nombre y Apellido</label>
+					<input placeholder="Escribe tu Nombre Completo" class="form-control form-control-sm" id="fullName" name="fullname" type="text" required>
+				</div>
+				
+				<div class>
+					<label for="telefono">Celular</label>
+					<input id="telefono" type="number" name="telefono" maxlength="10" required class="form-control form-control-sm">
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required class="form-control form-control-sm">
+				</div>
+				<div>
+					<label for="city">Ciudad</label>
+					<input name="city" id="city" type="text" required class="form-control form-control-sm">
+				</div>
+				<div>
+					<label for="empresa">Empresa</label>
+					<input name="empresa" id="empresa" type="text" placeholder="Nombre Empresa" required class="form-control form-control-sm">
+				</div>
 
-            <br><br>
-            
-            <div>
-                <h4>Especifica Tus Requerimientos</h4>
-                <label for="servicios">¿Selecciona el Servicio que te Interesa?</label>
-                <br><select name="servicios" id="servicios">
-                    <option value="s1">Servicio1</option>
-                    <option value="s2">Servicio2</option>
-                    <option value="s3">Servicio3</option>
-                    <option value="s4">Servicio4</option>
-                    <option value="n/a">No Aplica</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <br>
-                <label for="productos">¿Selecciona el Producto que te Interesa?</label>
-                <br>
-                <select name="productos" id="productos">
-                    <option value="s1">Producto1</option>
-                    <option value="s2">Producto2</option>
-                    <option value="s3">Producto3</option>
-                    <option value="s4">Producto4</option>
-                    <option value="n/a">No Aplica</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
-            <div>
-                <label for="requerimientos">¿Describe con mas detalle tus requerimientos?</label>
-                <br>
-                <textarea name="requerimientos" id="requerimientos" cols="37" rows="10"></textarea>
-            </div>
-           
-            <button type="submit" value="Enviar">
-                Enviar ✉
-            </button>
-             <button type="reset" value="Limpiar">
-                Borrar 🧹
-            </button>
+				<br><br>
+				
+				<div class="form-group">
+					<h4>Especifica Tus Requerimientos</h4>
+					<label for="servicios">¿Selecciona el Servicio que te Interesa?</label>
+					<br><select name="servicios" id="servicios" class="form-control form-control-sm">
+						<option value="s1">Servicio1</option>
+						<option value="s2">Servicio2</option>
+						<option value="s3">Servicio3</option>
+						<option value="s4">Servicio4</option>
+						<option value="n/a">No Aplica</option>
+						<option value="Otro">Otro</option>
+					</select>
+					<br>
+					<label for="productos" class="form-control form-control-sm">¿Selecciona el Producto que te Interesa?</label>
+					<br>
+					<select name="productos" id="productos" class="form-control form-control-sm">
+						<option value="s1">Producto1</option>
+						<option value="s2">Producto2</option>
+						<option value="s3">Producto3</option>
+						<option value="s4">Producto4</option>
+						<option value="n/a">No Aplica</option>
+						<option value="Otro">Otro</option>
+					</select>
+				</div>
+				<div>
+					<label for="requerimientos" class="form-control form-control-sm">¿Describe con mas detalle tus requerimientos?</label>
+					<br>
+					<textarea name="requerimientos" id="requerimientos" cols="37" rows="10" class="form-control form-control-sm"></textarea>
+				</div>
+			
+				<button type="submit" value="Enviar">
+					Enviar ✉
+				</button>
+				<button type="reset" value="Limpiar">
+					Borrar 🧹
+				</button>
 
-		</form>
-        <br>
+			</form>
+			<br> 
+		
+		</div>
+	</div>
 	</section>
-</main>			
- 
-	<footer class="container">
+
+
+	<footer class="">
 		<div class="">
 			<section class="row">
 				<div class="col-md-9 foot">
@@ -191,7 +204,7 @@
 		
 	</footer>
 
-	<div class="container title6">
+	<div class="title6">
 		<div class="row">
 			<section class="col-md-12">
 				<h6 class="">TAKÍON - Todos los Derechos Reservados &copy; 2021</h6>
