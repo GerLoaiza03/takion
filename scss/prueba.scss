@@ -637,3 +637,153 @@ input:focus, select:focus {
 	}
 }
 
+//servicios
+
+.box {
+	background: #262626;
+}
+
+.post .details {
+	background: #212121;
+}
+.blog-grid .post {
+    width: 490px
+}
+
+.frame {
+    margin: -20px -20px 20px -20px
+}
+.blog-grid .post .frame:before {
+    -moz-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7);
+    -webkit-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7);
+    box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7);
+}
+.post .details {
+    background: rgba(0, 0, 0, 0.12);
+    margin: 0 -20px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+    font-size: 11px;
+}
+.post .details span {
+    margin: 6px 0 0 0
+}
+.post .details,
+.post .details a {
+    color: #00091D
+}
+.post .details a:hover {
+    color: #86aca3
+}
+.post .details .likes a {
+    background: transparent url(../style/images/icon-like.png) no-repeat left 13px;
+    float: right;
+    position: relative;
+    height: 8px;
+    padding:10px 0px 21px 14px;
+    cursor: pointer;
+}
+.post .details .likes a.done {
+    cursor: text
+}
+.post .details .likes a.done:hover {
+    color: #00091D;
+}
+.post .details .comments {
+    background: transparent url(../style/images/icon-comment.png) no-repeat left 7px;
+    float: right;
+    position: relative;
+    padding: 4px 0px 5px 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.single .post .details {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.box {
+    margin: 0 0 30px 0;
+    background: #CDA448;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
+    padding: 20px;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+.frame {
+    display: block;
+    position: relative;
+    pointer-events: none;
+}
+.frame img {
+    display: block;
+    max-width: 100%;
+    pointer-events: auto;
+}
+.frame:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -moz-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7), 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7), 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7), 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
+}
+.frame a .more {
+    display: none;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.55) url(../style/images/icon-more.png) no-repeat center center;
+}
+.widget ul.post-list li .frame {
+    float: left;
+    margin-right: 15px;
+}
+ul.single-gallery li .frame {
+    margin: -20px -20px -20px -20px
+}
+
+
+.frame a .more {
+	background: #000 url(../style/images/icon-more.png) no-repeat center center;
+}
+
+.title a:hover {
+    color: #86aca3
+}
+.icon-audio,
+.icon-chat,
+.icon-image,
+.icon-link,
+.icon-quote,
+.icon-standard,
+.icon-video {
+    display: block;
+    float: left;
+}
+.icon-image {
+    background: transparent url(../style/images/icon-image.png) no-repeat left 6px;
+    padding: 4px 0 6px 20px;
+}
+
+.post {
+    margin-left: 80px;
+    margin-right: 0px;
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.post_principal {
+    justify-content: center;
+    align-content: center;
+}
