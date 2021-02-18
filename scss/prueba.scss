@@ -104,6 +104,19 @@ video {
     height: auto;
 }
 
+video {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    }
+    
+    video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
 #portada {
     padding-right: 0;
     padding-left: 0;
