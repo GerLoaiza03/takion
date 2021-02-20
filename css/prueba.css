@@ -30,6 +30,10 @@ h3, h6 {
   padding-bottom: 0.2rem; }
 
 .navbar {
+  position: fixed;
+  z-index: 1000;
+  /*max-width:1000px;*/
+  width: 100%;
   padding: 0.5rem 1rem 0.5rem 0rem;
   padding-bottom: 0;
   background: #752a2a;
@@ -90,12 +94,8 @@ video {
 
 .title1 {
   position: relative;
-  margin-top: -97px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 83px;
-  margin-right: 40px;
-  font-size: 4rem; }
+  margin-top: -57px;
+  font-size: 3rem; }
 
 .title2 {
   position: relative;
