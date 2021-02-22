@@ -81,8 +81,12 @@ h3, h6 {
 .parrafo__quienessomos, .parrafo__certificaciones {
     text-align: justify;
     padding-top: 2rem;
-    padding-right: 6rem;
-    padding-left: 6rem;
+    
+}
+
+.sub_quienes {
+    margin-top: 1rem;
+    font-size: 0.8rem;
 }
 
 main {
@@ -424,103 +428,7 @@ section {
 
 
 
-//formulario
-
-input {
-    border: 1px dotted #222;
-    border-radius: 0;
-    font-size: 5px;
-    font-family: 'Poppins', sans-serif;
-    -webkit-appearance: none;
-}
-
-label {
-    border: 1px dotted #333;
-    border-radius: 0;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    -webkit-appearance: none;
-    background-color: #00091D;
-    color: #CDA448;
-}
-
-button, input, select, textarea {
-    font-family: 'Poppins', sans-serif;
-    font-size   : 80%;
-    background-color: #CDA448;
-}
-
-select, button {
-    width : 100px;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-      box-sizing: border-box;
-  }
-
-input, textarea {
-    width : 300px;
-    margin: 0;
-
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-      box-sizing: border-box;
-}
-
-
-button:hover { 
-    font-size: 1.1rem;
-    color: #D0D1D5;
-    background-color: #00091D;
-}
-
-
-input, select{
-    width: 200px; height: 20px;
-    transition: all 2s;
-}
-
-input:focus, select:focus {
-    width: 400px;
-    font-size: 1.5rem;
-}
-
-
-.button__producto--right:hover  {
-    background-color: #CDA448 !important;
-    color: #00091D;
-    
-}
-
-.button__producto--left:hover{
-    background-color: #00091D;
-    color: white;
-}
-
-.formulario_contenedor{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #00091D;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//verificar
 .article__banner--img{
     padding-left: 0;    
     padding-right: 0;
@@ -645,73 +553,16 @@ input:focus, select:focus {
 }
 
 //servicios
-
-.box {
-	background: #262626;
+.post_principal {
+    padding-top: 50px;
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;   
 }
 
-.post .details {
-	background: #212121;
-}
-.blog-grid .post {
-    width: 490px
-}
-
-.frame {
-    margin: -20px -20px 20px -20px
-}
-.blog-grid .post .frame:before {
-    -moz-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7);
-    -webkit-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7);
-    box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7);
-}
-.post .details {
-    background: rgba(0, 0, 0, 0.12);
-    margin: 0 -20px;
-    overflow: hidden;
-    position: relative;
-    padding: 0 20px;
-    font-size: 11px;
-}
-.post .details span {
-    margin: 6px 0 0 0
-}
-.post .details,
-.post .details a {
-    color: #00091D
-}
-.post .details a:hover {
-    color: #86aca3
-}
-.post .details .likes a {
-    background: transparent url(../style/images/icon-like.png) no-repeat left 13px;
-    float: right;
-    position: relative;
-    height: 8px;
-    padding:10px 0px 21px 14px;
-    cursor: pointer;
-}
-.post .details .likes a.done {
-    cursor: text
-}
-.post .details .likes a.done:hover {
-    color: #00091D;
-}
-.post .details .comments {
-    background: transparent url(../style/images/icon-comment.png) no-repeat left 7px;
-    float: right;
-    position: relative;
-    padding: 4px 0px 5px 14px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-.single .post .details {
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
 .box {
     margin: 0 0 30px 0;
-    background: #CDA448;
+    background: #00091d;;
     -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
     padding: 20px;
@@ -722,16 +573,14 @@ input:focus, select:focus {
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
 }
+
 .frame {
+    margin: -20px -20px 20px -20px;
     display: block;
     position: relative;
     pointer-events: none;
 }
-.frame img {
-    display: block;
-    max-width: 100%;
-    pointer-events: auto;
-}
+
 .frame:before {
     content: '';
     position: absolute;
@@ -742,55 +591,237 @@ input:focus, select:focus {
     -webkit-box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7), 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
     box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.7), 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
 }
-.frame a .more {
-    display: none;
-    height: 100%;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.55) url(../style/images/icon-more.png) no-repeat center center;
-}
-.widget ul.post-list li .frame {
-    float: left;
-    margin-right: 15px;
-}
-ul.single-gallery li .frame {
-    margin: -20px -20px -20px -20px
+
+.servicios_img {
+    width: 500px;
+    height: 250px;
 }
 
-
-.frame a .more {
-	background: #000 url(../style/images/icon-more.png) no-repeat center center;
-}
-
-.title a:hover {
-    color: #86aca3
-}
-.icon-audio,
-.icon-chat,
-.icon-image,
-.icon-link,
-.icon-quote,
-.icon-standard,
-.icon-video {
+.icon-image {
     display: block;
     float: left;
-}
-.icon-image {
     background: transparent url(../style/images/icon-image.png) no-repeat left 6px;
     padding: 4px 0 6px 20px;
 }
 
-.post {
-    margin-left: 80px;
-    margin-right: 0px;
-    margin-top: 30px;
+.servi_post {
+    margin-left: 15px;
+    margin-right: 15px;
     height: fit-content;
 }
+.servi_post .details {
+    background: rgba(0, 0, 0, 0.12);
+    margin: 0 -20px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+    font-size: 11px;
+}
+.servi_post .details span {
+    margin: 6px 0 0 0
+}
 
-.post_principal {
+.servi_post .details,
+.servi_post .details a {
+    color: #00091D
+}
+
+.servi_post .details a:hover {
+    color: #86aca3
+}
+
+.servi_post .details .likes a {
+    background: transparent url(../style/images/icon-like.png) no-repeat left 13px;
+    float: right;
+    position: relative;
+    height: 8px;
+    padding:10px 0px 21px 14px;
+    cursor: pointer;
+}
+
+.servi_post .details .likes a.done:hover {
+    color: #00091D;
+}
+
+.servi_post .details .comments {
+    background: transparent url(../style/images/icon-comment.png) no-repeat left 7px;
+    float: right;
+    position: relative;
+    padding: 4px 0px 5px 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.parrafo_servi{
+    color: #D0D1D5;
+}
+
+.title_servi {
+    color: #CDA448;
+}
+.modal_button {
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+}
+
+
+
+
+//fin servicios
+
+//ceo
+.ceo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 1rem;
+    border-radius: 9999px;
+    border-width: 1px;
     justify-content: center;
-    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.certificacion {
+    width: 60%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+
+
+//formulario subscripcion
+
+.post-content, .after-post-content, .comments-area {
+    width: 100% !important;
+    padding: 0 2rem !important; 
+    box-sizing: border-box !important;
+    background: linear-gradient(90deg, rgba(0,9,29,1) 44%, rgba(117,42,42,1) 84%);
+}
+.subscription-single {
+    font-size: 1rem !important;
+    color: #fff !important;
+    text-align: center !important;
+}
+
+.p_subs {
+    padding-bottom: 0;
+    display: block !important;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+}
+
+.single, .mailpoet_submit {
+    background-color: #CDA448 !important;
+    font-weight: 700 !important;
+}
+
+.input_subs{
+    font-family: inherit !important;
+    font-size: 100% !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    border:none !important;
+}
+
+#input_email{
+    width: 20rem;
+    height: 2rem;
+}
+#input_subs{
+    width: 12rem;
+    height: 2rem;
+}
+
+.mailpoet_paragraph {
+    padding-top: 0.5rem !important;
+}
+
+.poli_takion {
+    color: #fff !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+.poli_takion:hover {
+    color:#00091D !important;
+    border-bottom: 1px solid !important;
+    background: #CDA448 !important;
+    
+}
+
+
+//formulario cliente y requerimientos
+
+.input_requeri {
+    border: 1px dotted #222;
+    border-radius: 0;
+    font-size: 5px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-appearance: none;
+}
+
+.label_requeri {
+    border: 1px dotted #333;
+    border-radius: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-appearance: none;
+    background-color: #00091D;
+    color: #CDA448;
+}
+
+.button_requeri, .input_requeri, .select_requeri, .texta_requeri {
+    font-family: 'Poppins', sans-serif;
+    font-size   : 80%;
+    background-color: #fff;
+}
+
+.select_requeri, .button_requeri {
+    width : 100px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+      box-sizing: border-box;
+  }
+
+.input_requeri, .texta_requeri {   
+    margin: 0;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+
+.button_requeri:hover { 
+    font-size: 1.1rem;
+    color: #D0D1D5;
+    background-color: #00091D;
+}
+
+
+.input_requeri, .select_requeri{
+    transition: all 2s;
+}
+
+.button__producto--right:hover  {
+    background-color: #CDA448 !important;
+    color: #00091D;
+}
+
+.button__producto--left:hover{
+    background-color: #00091D;
+    color: #CDA448;
+}
+
+.formulario_contenedor{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #00091D;
+}
+
+.animate__animated {
+    overflow: hidden; 
 }

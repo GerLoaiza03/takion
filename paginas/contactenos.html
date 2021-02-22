@@ -117,33 +117,33 @@
 			<form action="" method="POST"> 
 			
 				<div class="form-group">
-					<label for="fullName">Nombre y Apellido</label>
-					<input placeholder="Escribe tu Nombre Completo" class="form-control form-control-sm" id="fullName" name="fullname" type="text" required>
+					<label class="label_requeri" for="fullName">Nombre y Apellido</label>
+					<input placeholder="Escribe tu Nombre Completo" class="input_requeri form-control form-control-sm" id="fullName" name="fullname" type="text" required>
 				</div>
 				
 				<div class>
-					<label for="telefono">Celular</label>
-					<input id="telefono" type="number" name="telefono" maxlength="10" required class="form-control form-control-sm">
+					<label class="label_requeri" for="telefono">Celular</label>
+					<input id="telefono" type="number" name="telefono" maxlength="10" required class=" input_requeri form-control form-control-sm">
 				</div>
 				<div>
-					<label for="email">Email</label>
-					<input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required class="form-control form-control-sm">
+					<label class="label_requeri" for="email">Email</label>
+					<input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required class="input_requeri form-control form-control-sm">
 				</div>
 				<div>
-					<label for="city">Ciudad</label>
-					<input name="city" id="city" type="text" required class="form-control form-control-sm">
+					<label class="label_requeri" for="city">Ciudad</label>
+					<input name="city" id="city" type="text" required class="input_requeri form-control form-control-sm">
 				</div>
 				<div>
-					<label for="empresa">Empresa</label>
-					<input name="empresa" id="empresa" type="text" placeholder="Nombre Empresa" required class="form-control form-control-sm">
+					<label class="label_requeri" for="empresa">Empresa</label>
+					<input name="empresa" id="empresa" type="text" placeholder="Nombre Empresa" required class="input_requeri form-control form-control-sm">
 				</div>
 
 				<br><br>
 				
 				<div class="form-group">
 					<h4>Especifica Tus Requerimientos</h4>
-					<label for="servicios">¿Selecciona el Servicio que te Interesa?</label>
-					<br><select name="servicios" id="servicios" class="form-control form-control-sm">
+					<label class="label_requeri" for="servicios">¿Selecciona el Servicio que te Interesa?</label>
+					<br><select class="select_requeri" name="servicios" id="servicios" class="form-control form-control-sm">
 						<option value="s1">Servicio1</option>
 						<option value="s2">Servicio2</option>
 						<option value="s3">Servicio3</option>
@@ -152,9 +152,9 @@
 						<option value="Otro">Otro</option>
 					</select>
 					<br>
-					<label for="productos" class="form-control form-control-sm">¿Selecciona el Producto que te Interesa?</label>
+					<label  for="productos" class="label_requeri form-control form-control-sm">¿Selecciona el Producto que te Interesa?</label>
 					<br>
-					<select name="productos" id="productos" class="form-control form-control-sm">
+					<select class="select_requeri" name="productos" id="productos" class="form-control form-control-sm">
 						<option value="s1">Producto1</option>
 						<option value="s2">Producto2</option>
 						<option value="s3">Producto3</option>
@@ -164,15 +164,15 @@
 					</select>
 				</div>
 				<div>
-					<label for="requerimientos" class="form-control form-control-sm">¿Describe con mas detalle tus requerimientos?</label>
+					<label for="requerimientos" class="label_requeri form-control form-control-sm">¿Describe con mas detalle tus requerimientos?</label>
 					<br>
-					<textarea name="requerimientos" id="requerimientos" cols="37" rows="10" class="form-control form-control-sm"></textarea>
+					<textarea  name="requerimientos" id="requerimientos" cols="37" rows="10" class="texta_requeri form-control form-control-sm"></textarea>
 				</div>
 			
-				<button type="submit" value="Enviar">
+				<button class="button_requeri" type="submit" value="Enviar">
 					Enviar ✉
 				</button>
-				<button type="reset" value="Limpiar">
+				<button class="button_requeri" type="reset" value="Limpiar">
 					Borrar 🧹
 				</button>
 

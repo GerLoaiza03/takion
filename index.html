@@ -19,6 +19,7 @@
 	<link rel="manifest" href="favicon/site.webmanifest">
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cda448">
 	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<meta name="apple-mobile-web-app-title" content="Takion">
 	<meta name="application-name" content="Takion">
 	<meta name="msapplication-TileColor" content="#cda448">
@@ -115,7 +116,7 @@
 	
 
 
-			<h1 class="title1 container">Bienvenidos</h1>
+			<h1 class="title1 container wow animate__animated animate__rollIn">Bienvenidos</h1>
 			<section class="container " id="borderl">
 					
 					
@@ -123,11 +124,11 @@
 				<div>
 					<div class="row">
 								
-						<img src="contenido/2.png" alt="" class="col-md-6">
+						<img src="contenido/2.png" alt="" class="col-md-6 wow animate__animated animate__lightSpeedInLeft">
 						<article class="col-md-6">
 							<div class="pad"></div>
-						<h3 class="title3"> TAKION</h3>
-						<p>Partícula elemental hipotética dotada de una velocidad superior a la de la luz en el vacío.</p>	
+						<h3 class="title3 wow animate__animated animate__jackInTheBox"> TAKION</h3>
+						<p class="wow animate__animated animate__flipInY">Partícula elemental hipotética dotada de una velocidad superior a la de la luz en el vacío.</p>	
 					</article>
 					</div>
 				</div>
@@ -140,13 +141,13 @@
 					<div class="row">
 							<article class="col-md-6 ">
 								<div class="pad"></div>
-								<h3 class="title3">Nuestros Clientes</h3>
-								<p>En nuestra trayectoria hemos tenido la oportunidad de realizar proyectos para empresas e instituciones ampliamente reconocidas en el ámbito nacional.</p>								
+								<h3 class="title3 wow animate__animated animate__jackInTheBox">Nuestros Clientes</h3>
+								<p class="wow animate__animated animate__flipInY">En nuestra trayectoria hemos tenido la oportunidad de realizar proyectos para empresas e instituciones ampliamente reconocidas en el ámbito nacional.</p>								
 								<a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal">Mas Info</a>
 															
 							</article>
 							
-								<section class="carousel-section col-md-6 ">
+								<section class="carousel-section col-md-6 wow animate__animated animate__lightSpeedInRight">
 									<div class="container" id="carru">
 										
 										<div class="col">
@@ -212,6 +213,33 @@
 				</div>
 			</div>
 
+			<aside class="after-post-content ">
+				<div class="container row">
+				<div class="subscription-single alignwide col-md-12 wow animate__animated animate__flipInY"><p class="p_subs">¿Quieres recibir <strong>gratis</strong> contenidos exclusivos?</p>
+					
+					
+						<form target="_self" method="post" action="" >
+						
+							<div class="mailpoet_paragraph ">
+								<input 	type="email" class="mailpoet_text input_subs" id="input_email" name="" title="Correo Electrónico"  placeholder="Correo Electrónico *" ><input  type="submit" class="mailpoet_submit input_subs" id="input_subs" value="¡Suscríbete!">
+							</div>
+							<div class="">
+								
+							</div>
+							<div class="mailpoet_paragraph ">
+								<label class="mailpoet_checkbox_label">
+									<input lass="input_pol"	type="checkbox" class="mailpoet_checkbox"> He leído y acepto la política de privacidad.
+								</label><span class=""></span></div>
+							<div class="mailpoet_paragraph last"><a class="poli_takion" href="">Política de Privacidad</a></div>
+						
+						</form>
+					</div>
+				</div>
+			</aside>
+
+
+
+
 
 
 
@@ -250,7 +278,10 @@
 	</main>
 	<script src="js/jquery-3.5.1.slim.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-
+	<script src="https://wowjs.uk/dist/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 	
 
 	</body>
