@@ -60,15 +60,45 @@ h3, h6 {
     margin-bottom: 16px;
     margin-top: 16px; }
 
+.map_col {
+  display: block;
+  margin: auto;
+  padding-top: 30px; }
+
+.parrafo__cobertura {
+  text-align: center;
+  background-color: #CDA448;
+  margin-bottom: 30px; }
+
 .parrafo__quienessomos, .parrafo__certificaciones {
   text-align: justify;
   padding-top: 2rem; }
+
+.parrafo__valores, .lista__valores, .lista__modal {
+  text-align: center; }
+
+.lista__valores::before, .lista__modal li::before {
+  list-style: square inside;
+  content: "\2022";
+  color: #CDA448;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
+.lista__valores--espacios {
+  list-style: square inside;
+  line-height: 35px;
+  text-align: center; }
+
+.modal {
+  background-color: bg-dark; }
 
 .sub_quienes {
   margin-top: 1rem;
   font-size: 0.8rem; }
 
-main .title1, main .title2 {
+main .title1, main .title2, main .title__modal {
   background-color: #00091D; }
 
 main .title3, main .title6 {
@@ -81,6 +111,9 @@ main .title3_servicios {
 main .title6 {
   padding-top: 10px;
   padding-bottom: 10px; }
+
+.parrafo__modal, .lista__modal {
+  color: #D0D1D5; }
 
 video {
   position: relative;
@@ -105,6 +138,12 @@ video {
   font-size: 3rem;
   background-color: #CDA448 !important;
   color: #00091D; }
+
+.title_form {
+  margin-top: 30px;
+  background-color: #fff;
+  color: #CDA448;
+  font-weight: 900; }
 
 #t3 {
   margin-top: 1rem; }
@@ -360,7 +399,7 @@ section .space__card--art {
   width: 85%;
   height: 85%;
   position: absolute;
-  background-color: #00091d86;
+  background-color: #cda548bb;
   border-radius: 100%;
   animation: rotaIcono 3s linear infinite;
   top: 7.5%;
@@ -461,7 +500,12 @@ section .space__card--art {
 .servi_post {
   margin-left: 15px;
   margin-right: 15px;
-  height: fit-content; }
+  height: auto;
+  position: relative; }
+
+.details {
+  position: absolute;
+  bottom: 0; }
 
 .servi_post .details {
   background: rgba(0, 0, 0, 0.12);
@@ -559,7 +603,7 @@ section .space__card--art {
   margin: 0 !important;
   border: none !important; }
 
-#input_email {
+#input_email, #input_fullname {
   width: 20rem;
   height: 2rem; }
 
@@ -568,7 +612,10 @@ section .space__card--art {
   height: 2rem; }
 
 .mailpoet_paragraph {
-  padding-top: 0.5rem !important; }
+  padding-top: 0.5rem !important;
+  text-align: center;
+  justify-content: center;
+  align-content: center; }
 
 .poli_takion {
   color: #fff !important;
@@ -585,16 +632,17 @@ section .space__card--art {
   border-radius: 0;
   font-size: 5px;
   font-family: 'Poppins', sans-serif;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-weight: 700 !important; }
 
 .label_requeri {
-  border: 1px dotted #333;
-  border-radius: 0;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
-  -webkit-appearance: none;
-  background-color: #00091D;
-  color: #CDA448; }
+  color: #00091D;
+  background-color: #CDA448 !important;
+  font-weight: 700 !important;
+  padding-top: 4px;
+  width: 12rem;
+  height: 2rem;
+  text-align: center; }
 
 .button_requeri, .input_requeri, .select_requeri, .texta_requeri {
   font-family: 'Poppins', sans-serif;
@@ -638,7 +686,80 @@ section .space__card--art {
 .formulario_contenedor {
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #00091D; }
+  background-color: #00091D;
+  text-align: center;
+  justify-content: center;
+  align-content: center; }
 
 .animate__animated {
   overflow: hidden; }
+
+#page {
+  width: 330px;
+  margin: 70px auto 100px; }
+
+#slideshow {
+  height: 169px;
+  overflow: hidden;
+  width: 454px; }
+
+#slideshowContainer {
+  padding: 10px;
+  background-color: #181819;
+  margin: 30px 0 50px -72px;
+  width: 454px;
+  border: 1px solid #1f1f20; }
+
+#page h1,
+#page h2 {
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 105px;
+  background: url("../img/coming_soon.png") no-repeat; }
+
+#page h2 {
+  height: 76px;
+  background: url("../img/get_notified.png") no-repeat;
+  margin-bottom: 20px; }
+
+#page form {
+  background-color: #181819;
+  display: block;
+  height: 31px;
+  padding: 10px;
+  position: relative;
+  width: 323px;
+  margin-left: -7px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+#email {
+  background: url("../img/submit_form.png") no-repeat;
+  border: none;
+  color: #888888;
+  height: 31px;
+  left: 10px;
+  line-height: 31px;
+  padding-left: 8px;
+  position: absolute;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  top: 10px;
+  width: 215px;
+  outline: none; }
+
+#submitButton {
+  background: url("../img/submit_form.png") no-repeat right top;
+  border: none;
+  cursor: pointer;
+  height: 31px;
+  left: 236px;
+  line-height: 31px;
+  position: absolute;
+  text-indent: -99999px;
+  text-transform: uppercase;
+  top: 10px;
+  width: 96px; }
+
+#submitButton:hover {
+  background-position: right bottom; }

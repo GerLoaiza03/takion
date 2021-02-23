@@ -112,75 +112,81 @@
 		<h2 class="title2">Contactenos</h2>
 	 	
 		
-		<div class="container col-md-9 formulario_contenedor">
-			<h4>Dejanos tus datos para contactarte</h4>
-			<form action="" method="POST"> 
-			
-				<div class="form-group">
-					<label class="label_requeri" for="fullName">Nombre y Apellido</label>
-					<input placeholder="Escribe tu Nombre Completo" class="input_requeri form-control form-control-sm" id="fullName" name="fullname" type="text" required>
-				</div>
-				
-				<div class>
-					<label class="label_requeri" for="telefono">Celular</label>
-					<input id="telefono" type="number" name="telefono" maxlength="10" required class=" input_requeri form-control form-control-sm">
-				</div>
-				<div>
-					<label class="label_requeri" for="email">Email</label>
-					<input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required class="input_requeri form-control form-control-sm">
-				</div>
-				<div>
-					<label class="label_requeri" for="city">Ciudad</label>
-					<input name="city" id="city" type="text" required class="input_requeri form-control form-control-sm">
-				</div>
-				<div>
-					<label class="label_requeri" for="empresa">Empresa</label>
-					<input name="empresa" id="empresa" type="text" placeholder="Nombre Empresa" required class="input_requeri form-control form-control-sm">
-				</div>
+		<div class="formulario_contenedor">
+			<div class="row ">
+				<div class="col-md-9 container">
+						<h4 class="title_form col-md-12">Dejanos tus datos para contactarte</h4>
+													
+							<form action="" method="POST" class="form-inline">
+								<div class="container">
+									<div class="mailpoet_paragraph form-group">				
+										<label  class="label_requeri" id="input_subs" for="fullName">Nombres y Apellidos</label><input type="email" class="mailpoet_text input_subs form-sm" id="input_fullname" name="" title="Nombre Completo"  placeholder="Nombre Completo*" > 
+									</div>	
 
-				<br><br>
-				
-				<div class="form-group">
-					<h4>Especifica Tus Requerimientos</h4>
-					<label class="label_requeri" for="servicios">¿Selecciona el Servicio que te Interesa?</label>
-					<br><select class="select_requeri" name="servicios" id="servicios" class="form-control form-control-sm">
-						<option value="s1">Servicio1</option>
-						<option value="s2">Servicio2</option>
-						<option value="s3">Servicio3</option>
-						<option value="s4">Servicio4</option>
-						<option value="n/a">No Aplica</option>
-						<option value="Otro">Otro</option>
-					</select>
-					<br>
-					<label  for="productos" class="label_requeri form-control form-control-sm">¿Selecciona el Producto que te Interesa?</label>
-					<br>
-					<select class="select_requeri" name="productos" id="productos" class="form-control form-control-sm">
-						<option value="s1">Producto1</option>
-						<option value="s2">Producto2</option>
-						<option value="s3">Producto3</option>
-						<option value="s4">Producto4</option>
-						<option value="n/a">No Aplica</option>
-						<option value="Otro">Otro</option>
-					</select>
-				</div>
-				<div>
-					<label for="requerimientos" class="label_requeri form-control form-control-sm">¿Describe con mas detalle tus requerimientos?</label>
-					<br>
-					<textarea  name="requerimientos" id="requerimientos" cols="37" rows="10" class="texta_requeri form-control form-control-sm"></textarea>
-				</div>
-			
-				<button class="button_requeri" type="submit" value="Enviar">
-					Enviar ✉
-				</button>
-				<button class="button_requeri" type="reset" value="Limpiar">
-					Borrar 🧹
-				</button>
+									<div class="mailpoet_paragraph form-group">				
+										<label  class="label_requeri" id="input_subs" for="telefono">Numero Celular</label><input type="email" class="mailpoet_text input_subs form-sm" id="input_fullname" name="" title="Numero Contacto"  placeholder="Numero de Contacto*" > 
+									</div>
+									
+									<div class="mailpoet_paragraph form-group">				
+										<label  class="label_requeri" id="input_subs" for="email">Correo Electronico</label><input type="email" class="mailpoet_text input_subs form-sm" id="input_fullname" name="" title="Correo Electronico"  placeholder="Correo Electronico*" > 
+									</div>
 
-			</form>
-			<br> 
-		
+									<div class="mailpoet_paragraph form-group">				
+										<label  class="label_requeri" id="input_subs" for="city">Ciudad</label><input type="email" class="mailpoet_text input_subs form-sm" id="input_fullname" name="" title="Ciudad"  placeholder="Ciudad Residencia*" > 
+									</div>
+
+									<div class="mailpoet_paragraph form-group">				
+										<label  class="label_requeri" id="input_subs" for="empresa">Nombre Empresa</label><input type="email" class="mailpoet_text input_subs form-sm" id="input_fullname" name="" title="Nombre Empresa"  placeholder="Empresa Labora*" > 
+									</div>
+
+
+										<h4 class="title_form col-md-12 container">Especifica Tus Requerimientos</h4>
+
+									<div class="mailpoet_paragraph form-group">	
+										<label  class="label_requeri col-md-9" id="input_subs" for="servicio">¿Selecciona el Servicio que te Interesa?</label>
+									</div>			
+									<div>	
+										<select class="col-md-9" name="Servicios" id="servicio" >
+											<option value="s1">Servicio1</option>
+											<option value="s2">Servicio2</option>
+											<option value="s3">Servicio3</option>
+											<option value="s4">Servicio4</option>
+											<option value="n/a">No Aplica</option>
+											<option value="Otro">Otro</option>
+										</select>
+									</div>
+
+									<div class="mailpoet_paragraph form-group">	
+										<label  class="label_requeri col-md-9" id="input_subs" for="servicio">¿Selecciona el Producto que te Interesa?</label>
+									</div>			
+									<div>	
+										<select class="col-md-9" name="Productos" id="producto" >
+											<option value="n/d">No Disponible</option>
+										</select>
+									</div>			
+									
+									<div class="mailpoet_paragraph form-group">	
+										<label  class="label_requeri col-md-9" id="input_subs" for="requerimientos">¿Describe con detalle tus requerimientos?</label>
+									</div>
+										<textarea  name="requerimientos" id="requerimientos" cols="37" rows="10" class="texta_requeri col-md-9"></textarea>
+									</div>
+									br
+
+									<div class="container">
+										<button class="button_requeri btn btn-primary" type="submit" value="Enviar">
+											Enviar ✉
+										</button>
+										<button class=" btn btn-primary" type="reset" value="Limpiar">
+											Borrar 🧹
+										</button>
+
+									</div>
+								<br>	<br>
+								</div>
+							</form>	
+				</div>	
+			</div>			
 		</div>
-	</div>
 	</section>
 
 
