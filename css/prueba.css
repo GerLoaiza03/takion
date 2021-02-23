@@ -536,7 +536,9 @@ section .space__card--art {
 .subscription-single {
   font-size: 1rem !important;
   color: #fff !important;
-  text-align: center !important; }
+  text-align: center !important;
+  align-content: center;
+  justify-content: center; }
 
 .p_subs {
   padding-bottom: 0;
